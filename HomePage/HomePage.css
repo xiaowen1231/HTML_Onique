@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+.head{
+background-color: black;
+display: flex;
+justify-content: space-between;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+.Logo{
+    width: 150px;
+    margin: 5px 20px;
+}
+.items{
+    color: white;
+    text-decoration: underline;
+    margin: 0 20px;
+}
+.search{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 10px;
+}
+.icon{
+    width: 26px;
+}
+.txtSearch{
+    border: none;
+}
+.icon2{
+    width: 26px;
+    margin: 0 20px;
+}
