@@ -7,11 +7,14 @@
 }
 .head{
 background-color: #272727;
+
 display: flex;
 justify-content: space-between;
+
 position: sticky;
 top: 0;
 
+z-index: 1;
 }
 .nav{
     display: flex;
@@ -45,9 +48,14 @@ top: 0;
     margin: 0 20px;
 }
 .carousel{
-    width: 1080px;
-    height: 720px;
-    border:5px red solid;
+    width: 60%;
+
+    margin: 0 auto;
+
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px grey;
+
+    overflow: hidden;
 
     position: relative;
 }
@@ -76,8 +84,7 @@ top: 0;
     bottom: 0;
     margin: auto 0;
 
-    background-color: #3C3C3C;
-    color: white;
+    background-color: transparent;
 
     width: 50px;
     height: 50px;
@@ -90,17 +97,48 @@ top: 0;
     text-align: center;
 
     user-select: none;
+    opacity: 0.2;
 }
-.bottom{
+.carousel .shift .left{
+    left: 20px;
+}
+.carousel .shift .left img{
+    width: 100%;
+}
+.carousel .shift .right img{
+    width: 100%;
+}
+.carousel .shift .right{
+    right: 20px;
+}
+.carousel .bottom{
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    width: max-content;
+
     display: flex;
     gap: 10px;
 }
-.bottom .indicator{
+.carousel .bottom .indicator{
     width: 15px;
     height: 15px;
 
-    background-color: #3C3C3C;
+    background-color: white;
     border-radius: 100%;
 
+    opacity: 0.3;
+
     cursor: pointer;
+}
+.carousel:hover .shift .btn{
+    opacity: 1;
+}
+.carousel:hover .bottom .indicator{
+    opacity: 1;
 }
