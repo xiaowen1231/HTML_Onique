@@ -23,10 +23,15 @@
 
     width: 80%;
 
-    margin: 20px;
+    margin: 5px 20px;
     padding: 20px;
 
+    display: flex;
 
+    border: 0.5px #F0F0F0 solid;
+    box-shadow: 5px 5px 5px #ADADAD	;    
+
+    border-radius: 10px;
 }
 .mainContent .productCategories .categoryBlock{
     margin-bottom: 20px ;
@@ -61,4 +66,119 @@
     
     font-size: 13px;
     
+    display: block;
+}
+.mainContent .productContext .image{
+    width: 40%;
+}
+.mainContent .productContext .image img{
+    width: 100%;
+}
+.mainContent .productContext .description{
+    width: 60%;
+
+
+    margin: 0 10px;
+}
+.mainContent .productContext .description .name{
+    padding-bottom: 10px;
+
+    font-size: 1.5em;
+    font-weight: bold;
+
+    border-bottom: 1px black solid;
+}
+.mainContent .productContext .description .detail{
+    margin: 10px 0;
+
+    display: flex;
+    align-items: end;
+
+}
+.mainContent .productContext .description .detail .title{
+    font-weight: bold;
+    font-size: 20px;
+}
+.mainContent .productContext .description .detail .price{
+    margin: 0 10px;
+    font-size: 20PX;
+    font-weight: bold;
+}
+.mainContent .productContext .description .selector{
+
+    align-items: center;
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+.mainContent .productContext .description .selector .title{
+    font-weight: bold;
+    font-size: 14px;
+}
+.mainContent .productContext .description .selector .list {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+.mainContent .productContext .description .selector .list .colorBox{
+    width: 30px;
+    height: 30px;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+.mainContent .productContext .description .selector .list .colorBox img{
+    width: 100%;
+}
+.mainContent .productContext .description .selector .list .colorBox{
+    width: 30px;
+    height: 30px;
+}
+.mainContent .productContext .description .selector .list .sizeBox{
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+    line-height: 30px;
+
+    border-radius: 5px;
+    border: 1px #5B5B5B solid;
+}
+.mainContent .productContext .description .selector .quantity{
+    display: flex;
+    
+    border: 2px solid black;
+    border-radius: 5px;
+    
+    align-items: center;
+}
+.mainContent .productContext .description .selector .quantity .quantitybutton{
+    padding: 3px;
+    box-sizing: border-box;
+
+    width: 30px;
+    height: 30px;
+
+    font-weight: bold;
+
+    text-align: center;
+    line-height: 30px;
+
+    background-color: #272727;
+}
+.mainContent .productContext .description .selector .quantity .quantityText{
+    width: 70px;
+
+    font-weight: bold;
+
+    text-align: center;
+    line-height: 30px;
+
+}
+.mainContent .productContext .description .selector .quantity .quantitybutton img{
+    width: 100%;
 }
