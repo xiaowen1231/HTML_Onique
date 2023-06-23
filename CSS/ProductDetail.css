@@ -8,21 +8,19 @@
     margin: 20px auto;
     padding: 20px;
 
-
     display: flex;
 
 }
 .mainContent .productCategories{
     box-sizing: border-box;
+
     width: 15%;
 
-    margin: 20px;
     padding: 5px;
-
-
 }
 .mainContent .productContext{
     box-sizing: border-box;
+
     width: 80%;
 
     margin: 20px;
@@ -31,11 +29,12 @@
 
 }
 .mainContent .productCategories .categoryBlock{
-    margin: 20px 0;
+    margin-bottom: 20px ;
     padding: 5px;
 
     border: 0.5px #F0F0F0 solid;
     border-radius: 10px;
+    
     box-shadow: 5px 5px 5px #ADADAD	;    
 
 }
@@ -43,22 +42,23 @@
     margin: 10px 0;
     padding: 5px;
 
-    border-radius: 10px;
+    border-radius: 15px;
 
     background-color: #272727;
     color: white;
 
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
 
     overflow: hidden;
     text-align: center;
 }
 .mainContent .productCategories .categoryBlock .categoriesName .categoryItems{
-    list-style-type: circle;
     list-style-position: inside;
 }
 .mainContent .productCategories .categoryBlock .categoriesName li{
     padding: 5px;
-    color: #6C6C6C;
+    
+    font-size: 13px;
+    
 }
