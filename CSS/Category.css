@@ -67,15 +67,14 @@ justify-content: center;
 }  
 
 .Range .startRange{
-    font-size: 18px;
+    font-size: 16px;
     color: darkgrey;
 }
 .RangeNumber{ 
     display: flex;   
    
 }
-.RangeNumber .RangeType p{
-    
+.RangeNumber .RangeType p{    
     font-size: 18px;
     margin-left: 35px;
 }
