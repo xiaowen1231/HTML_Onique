@@ -3,9 +3,9 @@
     padding:0;
 }
 .allProduct{
-width:13%;
+width:8%;
 margin: 60px auto;
-margin-left: 100px;
+margin-left: 60px;
 margin-bottom: 10px;
 padding: 10px;
 border-radius: 10px;
@@ -19,39 +19,77 @@ justify-content: center;
     font-weight: bold;
 }
 .category{
-    width: 13%;
+    width: 20%;
     margin: 40px auto;
-    margin-left: 100px;
+    margin-left:30px;
     margin-top: 10px;    
     padding-left:15px ; 
     font-size: 25px;
-    font-weight: bold;    
+    font-weight: bold;  
 }
 .category .newProduct{
-    margin-left: 8px ;
+    margin-left: 6px ;
     margin-bottom:10px ;
     padding-left:35px;
 }
 .category .newProduct p{
+    font-weight: 500;
     font-size: 18px;  
     margin: 5px;
-    padding-left: 5px; 
+    padding-left: 15px; 
 }
 .category .productTitle{
     margin-bottom: 15px;
     padding-left: 35px ;
 }
 .Ptitle{
-    width:60%;
+    width:65%;
     margin-left: 400px;
     margin-top: 30px;
     border-radius: 10px;
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
    }
 .Ptitle p{
     color: white;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: bold;    
+}
+.Allbody{
+    margin: 20px auto 0px;
+    width: 1800px;    
+}
+.Range{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 35px;        
+}  
+
+.Range .startRange{
+    font-size: 18px;
+    color: darkgrey;
+}
+.RangeNumber{ 
+    display: flex;   
+   
+}
+.RangeNumber .RangeType p{
+    
+    font-size: 18px;
+    margin-left: 35px;
+}
+.nbText{
+    margin-left: 35px;
+    border: 1px solid rgb(221, 221, 221);
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px
+}
+.desh{
+    width: 16px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin: 20px -10px 20px 20px;
 }
