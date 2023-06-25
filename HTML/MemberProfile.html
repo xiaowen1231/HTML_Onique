@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/Navigation.css" />
+    <link rel="stylesheet" href="/CSS/Footer.css" />
+    <link rel="stylesheet" href="/CSS/Member.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <title>個人資料及密碼修改</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Shippori Mincho", serif;
+      }
+      .content {
+        height: 800px;
+        width: 1280px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        /* background-color: antiquewhite; */
+      }
+      .content .memberNavbar {
+        height: 400px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        /* background-color: bisque; */
+      }
+
+      .memberNavbar a {
+        text-decoration: none;
+        font-size: 16px;
+        color: black;
+      }
+      .memberNavbar .recordLink {
+        padding: 30px 10px 10px;
+        border-bottom: 1px gray solid;
+        /* background-color: aqua; */
+      }
+      .memberNavbar .mykeepLink {
+        padding: 10px 10px;
+        border-bottom: 1px gray solid;
+        /* background-color: aqua; */
+      }
+      .memberNavbar .myprofileLink {
+        padding: 10px 10px;
+        border-bottom: 1px gray solid;
+        /* background-color: aqua; */
+      }
+      .profileRegion {
+        width: 1040px;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        /* background-color: aquamarine; */
+      }
+      .profileRegion .profileLabel {
+        margin: 20px 20px;
+      }
+      .profileRegion .profileContent {
+        margin: 20px 40px;
+        font-size: 18px;
+        display: flex;
+        
+      }
+      .contentLabel {
+        /* background-color: coral; */
+        width: 150px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .contentText {
+        /* background-color: darkgrey; */
+        width: 300px;
+      }
+      .contentText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .genderRadiobox {
+        display: inline-block;
+      }
+      .changePwdRegion {
+        margin: 20px 30px;
+        font-size: 18px;
+        /* background-color: aqua; */
+        
+    }
+    .changePwdContent{
+        margin:20px 10px ;
+        display: flex;
+        
+      }
+      .changePwdLabel{
+        /* background-color: aqua; */
+        
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .changePwdContentText{
+       
+        height: 150px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="nav">
+        <div class="Logo">
+          <img src="/Images/Head/人形Logo.png" />
+        </div>
+        <div class="items">新品到貨</div>
+        <div class="items">熱銷商品</div>
+        <div class="items">所有商品</div>
+        <div class="items">活動專區</div>
+      </div>
+      <div class="nav">
+        <div class="search">
+          <input type="text" placeholder="搜尋商品" class="txtSearch" />
+          <div class="iconLoupe">
+            <img src="/Images/Head/loupe.png" />
+          </div>
+        </div>
+        <div class="icon">
+          <img src="/Images/Head/user.png" />
+        </div>
+        <div class="icon">
+          <img src="/Images/Head/like.png" />
+        </div>
+        <div class="icon">
+          <img src="/Images/Head/shopping-cart.png" />
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="memberNavbar">
+        <div class="recordLink"><a href="MemberInfo.html">訂單</a></div>
+        <div class="mykeepLink"><a href="MemberMykeep.html">收藏</a></div>
+        <div class="myprofileLink">
+          <a href="MemberProfile.html">個人資料及密碼修改</a>
+        </div>
+      </div>
+      <div class="profileRegion">
+        <div class="profileLabel"><h2>會員個人資料</h2></div>
+        <div class="profileContent">
+          <div class="contentLabel">
+            <label for="memberName">姓名</label>
+            <label>性別</label>
+            <label for="birthdate">生日</label>
+            <label for="address">通訊地址</label>
+            <label for="phone">手機號碼</label>
+          </div>
+
+          <div class="contentText">
+            <input type="text" id="memberName" value="Ada Wang" />
+            <div class="genderRadiobox">
+              <span>男</span><input type="radio" value="male" name="gender" />
+              <span>女</span
+              ><input type="radio" value="female" name="gender" />
+              <span>不公開</span
+              ><input type="radio" value="unknown" name="gender" />
+            </div>
+            <input type="date" id="birthdate" />
+            <input type="text" id="address" />
+            <input type="text" id="phone" value="0900000000" />
+            
+          </div>
+        </div>
+        <div class="changePwdRegion">
+            <div class="changePwdRegionLabel">
+                <h2>更改密碼</h2>
+
+            </div>
+          <div class="changePwdContent">
+            <div class="changePwdLabel">
+                <label for="formerPwd">輸入舊密碼</label>
+                <label for="newPwd">輸入新密碼</label>
+                <label for="newPwd2">再次輸入新密碼</label>
+              </div>
+              <div class="changePwdContentText">
+                <input type="password" id="formerPwd"/>
+                <input type="password" id="newPwd" />
+                <input type="password" id="newPwd2" />
+              </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="content">
+        <div class="about">
+          <div class="titleText">關於Onique</div>
+          <div>品牌故事</div>
+          <div>店鋪資訊</div>
+          <div>聯絡我們</div>
+        </div>
+        <div class="about">
+          <div class="titleText">購物相關</div>
+          <div>隱私權保護政策</div>
+          <div>退換貨說明</div>
+          <div>會員電子報</div>
+        </div>
+        <div class="about">
+          <div class="titleText">官方社群</div>
+          <div>Facebook</div>
+          <div>Line</div>
+          <div>Instagram</div>
+          <div>Youtube</div>
+        </div>
+        <div class="about">
+          <div class="logoEn">
+            <img src="/Images/Footer/LogoEn.png" />
+          </div>
+          <div class="media">
+            <div class="icon">
+              <img src="/Images/Footer/FB_logo.png" />
+            </div>
+            <div class="icon">
+              <img src="/Images/Footer/Line_logo.png" />
+            </div>
+            <div class="icon">
+              <img src="/Images/Footer/IG_logo.png" />
+            </div>
+            <div class="icon">
+              <img src="/Images/Footer/youtube.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
