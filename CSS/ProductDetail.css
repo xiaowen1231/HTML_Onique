@@ -19,6 +19,7 @@
     padding: 5px;
 }
 .mainContent .productContext{
+    
     box-sizing: border-box;
 
     margin: 5px 20px;
@@ -75,7 +76,6 @@
 }
 .mainContent .productContext .description{
     width: 60%;
-
 
     margin: 0 10px;
 }
@@ -215,12 +215,15 @@
     width: 100%;
 }
 .mainContent .productContext .description .buyOrAddToCart{
+    width: 100%;
+
     font-size: 14PX;
     font-weight: bold;
 
     display: flex;
     
     justify-content: space-around;
+
 }
 .mainContent .productContext .description .buyOrAddToCart .btnStyle{
     border-radius: 15px;
