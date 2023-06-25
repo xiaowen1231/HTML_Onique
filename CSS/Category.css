@@ -58,7 +58,8 @@ justify-content: center;
     margin: 20px auto 0px;
     width: 1800px;    
 }
-.ProductWall2{  
+.ProductWall2{
+    text-align: center;  
     width: 90%;
     margin: 10px auto;
     padding: 10px;
@@ -97,7 +98,7 @@ justify-content: center;
 .ProductWall2 .productCard .productPrice{
     display: inline-block;
     padding: 5px;
-    text-align: center;
+    text-align:center;
     font-size: 0.8em;
 }
 .ProductWall2 .productCard .productIcon{
