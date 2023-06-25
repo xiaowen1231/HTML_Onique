@@ -48,7 +48,7 @@
     margin: 10px 0;
     padding: 5px;
 
-    border-radius: 15px;
+    border-radius: 5px;
 
     background-color: #272727;
     color: white;
@@ -65,9 +65,8 @@
 .mainContent .productCategories .categoryBlock .categoriesName li{
     padding: 5px;
     
-    font-size: 13px;
+    font-size: 14px;
     
-    display: block;
 }
 .mainContent .productContext .imageAndDescription .image{
     width: 40%;
@@ -246,14 +245,16 @@
 
     padding: 10px 0 ;
 
+    
+
     width: 100%;
 }
 .mainContent .productContext .youMayAlsoLike .title{
     border-bottom: 1px solid #5B5B5B;
 
-   padding: 10px;
+    padding: 10px;
 
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
 }
 .mainContent .productContext .youMayAlsoLike .recommend{
@@ -263,6 +264,7 @@
     display: inline-flex;
 
     width: 1100px;
+
 
     overflow: hidden;
 }
