@@ -252,6 +252,7 @@
 .mainContent .productContext .youMayAlsoLike .title{
     border-bottom: 1px solid #5B5B5B;
 
+    margin-top: 40px;
     padding: 10px;
 
     font-size: 24px;
