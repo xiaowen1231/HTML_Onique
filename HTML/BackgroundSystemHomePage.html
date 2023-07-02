@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/CSS/BackgroundSystemHomePage.css">
-
+    
     <title>後台管理系統</title>
 </head>
 <body>
@@ -16,11 +16,64 @@
                 <div class="title">後台管理系統</div>
             </div> 
             <div class="accountAndManage">
-                <figure>
-                    <img src="">
+                <div>歡迎 , OOO</div>
+                <figure class="photoStickers">
+                    <img src="/Images/ManagerPhoto/範例頭貼1.jpg">
+                </figure>
+                <figure class="backgroundHeadIcon">
+                    <img src="/Images/Head/bell.png">
+                    <span class="notify">99</span>
                 </figure>
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="optionsAndContent">
+            <div class="managerOptions">
+                <div class="btnOptions menu" id="btnMenu">
+                    <figure class="icon">
+                        <img src="/Images/options/menu.png">
+                    </figure>
+                </div>
+                <div class="btnOptions">
+                    <figure class="icon">
+                        <img src="/Images/options/employee.png">
+                    </figure>
+                    <div>員工管理</div>
+                </div>
+                <div class="btnOptions">
+                    <figure class="icon">
+                        <img src="/Images/options/group.png">
+                    </figure>
+                    <div>會員管理</div>
+                </div>
+                <div class="btnOptions">
+                    <figure class="icon">
+                        <img src="/Images/options/tshirt.png">
+                    </figure>
+                    <div>商品管理</div>
+                </div>
+                <div class="btnOptions">
+                    <figure class="icon">
+                        <img src="/Images/options/shopping-list.png">
+                    </figure>
+                    <div>訂單管理</div>
+                </div>
+                <div class="btnOptions">
+                    <figure class="icon">
+                        <img src="/Images/options/coupon.png">
+                    </figure>
+                    <div>優惠管理</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+        $("#btnMenu").click(function(){
+            console.log($(this).parent());
+            $(this).parent().toggleClass("min")
+        })
+    </script>
 </body>
 </html>
