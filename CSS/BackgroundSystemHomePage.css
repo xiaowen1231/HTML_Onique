@@ -26,11 +26,12 @@ img{
 .container .nav .logoAndTitle .logo{
     width: 200px;
     margin: 20px;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .container .nav .logoAndTitle .logo:hover{
     width: 220px;
     margin: 20px;
+    transform: rotate(3deg);
 }
 .container .nav .logoAndTitle .title{
     color: white;
@@ -101,9 +102,9 @@ img{
     display:flex;
     align-items: center;
     gap: 20px;
-    transition: all 0.5s;
     user-select: none;
-    cursor: pointer;
+    cursor: pointer;    
+    transition: all 0.5s;
 }
 .container .optionsAndContent .managerOptions .btnOptions:hover{
     color: wheat;
@@ -113,6 +114,7 @@ img{
 .container .optionsAndContent .managerOptions .btnOptions .icon{
     width: 30px;
     height: 30px;
+   
 }
 .container .optionsAndContent .managerOptions .btnOptions.menu{
     margin: 10px;
@@ -123,5 +125,6 @@ img{
 .container .optionsAndContent .managerOptions.min{
     width:50px ;
     height: 50px;
+    overflow: hidden;
     background-color: #272727;
-}
+    }

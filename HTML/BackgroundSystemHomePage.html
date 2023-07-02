@@ -32,7 +32,7 @@
             <div class="managerOptions">
                 <div class="btnOptions menu" id="btnMenu">
                     <figure class="icon">
-                        <img src="/Images/options/menu.png">
+                        <img src="/Images/options/close.png">
                     </figure>
                 </div>
                 <div class="btnOptions">
@@ -70,9 +70,19 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script>
+        let minSize = false;
         $("#btnMenu").click(function(){
-            console.log($(this).parent());
+            
+
             $(this).parent().toggleClass("min")
+            if(!minSize){
+                $(this).find("img").prop("src","/Images/options/menu.png")
+                minSize = true
+            }
+            else{
+                $(this).find("img").prop("src","/Images/options/close.png")
+                minSize = false
+            }
         })
     </script>
 </body>
