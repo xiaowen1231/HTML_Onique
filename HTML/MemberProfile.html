@@ -29,7 +29,7 @@
         /* background-color: antiquewhite; */
       }
       .memberProfileContent .memberNavbar {
-        height: 400px;
+        max-height: 400px;
         width: 200px;
         display: flex;
         flex-direction: column;
@@ -60,9 +60,7 @@
       }
       .profileRegion {
         width: 1040px;
-        padding-left: 10px;
-        display: flex;
-        flex-direction: column;
+        padding-left: 10px;        
         justify-content: start;
         /* background-color: aquamarine; */
       }
@@ -73,7 +71,17 @@
         margin: 20px 40px;
         font-size: 18px;
         display: flex;
+        flex-direction: column;
         
+      }
+      .profileRegion .profileContent div{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        background-color: cadetblue;
+      }
+      .profileRegion .profileContent div label{
+        width: 150px;
       }
       .contentLabel {
         /* background-color: coral; */
@@ -92,37 +100,31 @@
         flex-direction: column;
         justify-content: space-between;
       }
-      .genderRadiobox {
-        display: inline-block;
-      }
+      
+
       .changePwdRegion {
         margin: 20px 30px;
         font-size: 18px;
         /* background-color: aqua; */
-        
-    }
-    .changePwdContent{
+        }
+      .changePwdRegion .changePwdContent{
         margin:20px 10px ;
-        display: flex;
+            
+      }
+
+      
+      .changePwdRegion .changePwdContent div{
+        background-color: bisque;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 10px;
         
       }
-      .changePwdLabel{
-        /* background-color: aqua; */
-        
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+      .changePwdRegion .changePwdContent div label{
+        width: 150px;
       }
-      .changePwdContentText{
-       
-        height: 150px;
-        width: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         
-      }
+      
     </style>
   </head>
   <body>
@@ -154,54 +156,62 @@
         </div>
       </div>
     </div>
+
     <div class="memberProfileContent">
       <div class="memberNavbar">
         <div class="recordLink"><a href="MemberInfo.html">訂單</a></div>
         <div class="mykeepLink"><a href="MemberMykeep.html">收藏</a></div>
-        <div class="myprofileLink">
-          <a href="MemberProfile.html">個人資料及密碼修改</a>
-        </div>
+        <div class="myprofileLink"><a href="MemberProfile.html">個人資料及密碼修改</a></div>
       </div>
       <div class="profileRegion">
         <div class="profileLabel"><h2>會員個人資料</h2></div>
+
         <div class="profileContent">
-          <div class="contentLabel">
+          <div>
             <label for="memberName">姓名</label>
-            <label>性別</label>
-            <label for="birthdate">生日</label>
-            <label for="address">通訊地址</label>
-            <label for="phone">手機號碼</label>
+            <input type="text" id="memberName" value="Ada Wang" />
+          </div>
+          <div>
+            <label>性別</label>            
+              <span>男</span><input type="radio" value="male" name="gender" />
+              <span>女</span><input type="radio" value="female" name="gender" />
+              <span>不公開</span><input type="radio" value="unknown" name="gender" />           
           </div>
 
-          <div class="contentText">
-            <input type="text" id="memberName" value="Ada Wang" />
-            <div class="genderRadiobox">
-              <span>男</span><input type="radio" value="male" name="gender" />
-              <span>女</span
-              ><input type="radio" value="female" name="gender" />
-              <span>不公開</span
-              ><input type="radio" value="unknown" name="gender" />
-            </div>
+          <div>
+            <label for="birthdate">生日</label>
             <input type="date" id="birthdate" />
+          </div>
+          <div>
+            <label for="address">通訊地址</label>
             <input type="text" id="address" />
+          </div>
+          <div>
+            <label for="phone">手機號碼</label>
             <input type="text" id="phone" value="0900000000" />
           </div>
-        </div>
+        </div>     
+          
+
+          
+          
         <div class="changePwdRegion">
             <div class="changePwdRegionLabel">
                 <h2>更改密碼</h2>
             </div>
           <div class="changePwdContent">
-            <div class="changePwdLabel">
+            <div>
                 <label for="formerPwd">輸入舊密碼</label>
-                <label for="newPwd">輸入新密碼</label>
-                <label for="newPwd2">再次輸入新密碼</label>
-              </div>
-              <div class="changePwdContentText">
                 <input type="password" id="formerPwd"/>
+            </div>
+            <div>
+                <label for="newPwd">輸入新密碼</label>                
                 <input type="password" id="newPwd" />
-                <input type="password" id="newPwd2" />
-              </div>
+            </div>
+            <div>
+                <label for="newPwd2">再次輸入新密碼</label>
+                <input type="password" id="newPwd2" />                
+            </div>
           </div>
           
         </div>
