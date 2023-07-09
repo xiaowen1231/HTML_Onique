@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.shoppingCartContainer{
+    width: 1200px;
+    padding: 10px;
+    margin: 5px auto;
+}
+.orderStatus{
+    width: 800px;
+    margin: 5px auto;    
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+}
+.orderStatus .Status-col{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.orderStatus .Status-col .stepNumber{
+    border-radius: 50%;
+    background-color: grey;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.orderStatus .Status-col.now{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    font-weight: bold;
+}
+.orderStatus .Status-col.now .stepNumber{
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+}
+.orderInformation{
+    text-align: center;
+    font-weight: bold;
+}
+.subTotal{
+    font-size: 20PX;
+    font-weight: bold;
+    color: red;
+}
