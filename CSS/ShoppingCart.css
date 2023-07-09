@@ -35,11 +35,11 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: black;
+    color: #272727;
     font-weight: bold;
 }
 .orderStatus .Status-col.now .stepNumber{
-    background-color: black;
+    background-color: #272727;
     width: 25px;
     height: 25px;
     line-height: 25px;
@@ -53,14 +53,7 @@
     font-weight: bold;
     color: red;
 }
-.shoppingCartContainer .title{
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-label{
-    margin: 10px 0 ;
-    font-weight: bold;
+.checkInformation
+{
+    background-color: #ADADAD;
 }
