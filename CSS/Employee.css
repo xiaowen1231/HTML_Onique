@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.EmployeeMain{
+    width: 1500px;
+    padding: 10px;
+    margin: 5px auto;
+    border: 2px solid red;
+}
+
+.EmployeeStatus{
+    width: 800px;
+    margin: 5px auto;    
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: grey;
+    border: 2px solid green;
+}
+
+.table{
+    
+    width: 1500px;
+    border: 2px solid black;
+    
+}
+
+.th{
+    background-color: black;
+    color: white;
+    border: 2px solid pink;
+    text-align: center;
+}
+
+.td{
+    
+    text-align: center;
+    border: 2px solid blue;
+}
+
