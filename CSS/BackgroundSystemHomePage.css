@@ -31,12 +31,12 @@ img{
 .container .nav .logoAndTitle .logo{
     width: 200px;
     margin: 20px;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 .container .nav .logoAndTitle .logo:hover{
     width: 220px;
     margin: 20px;
-    transform: rotate(3deg);
+    transform: rotate(720deg);
 }
 .container .nav .logoAndTitle .title{
     color: white;
