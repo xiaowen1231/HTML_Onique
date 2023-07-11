@@ -66,27 +66,29 @@
 }
 .Allbody .div1 .CategoryBlock .category{
     list-style-position: inside;
-    font-weight: bold;
+    font-weight: bold;    
 }
 .Allbody .div1 .CategoryBlock .category .startRange{
+    margin-left: 10px;
     font-size: 16px;
-    color: darkgrey;
+    color: darkgrey;   
 }
 .Allbody .div1 .CategoryBlock .category .RangeNumber{ 
     display: flex;
-    margin-bottom:10px ;  
-   
+    margin-bottom:10px ;    
 }
 .Allbody .div1 .CategoryBlock .category .RangeNumber .RangeType{
     margin-right: 20px;
 }
-.Allbody .div1 .CategoryBlock .category .RangeNumber .RangeType p{    
-    font-size: 18px;    
+.Allbody .div1 .CategoryBlock .category .RangeNumber .RangeType p{ 
+    margin-left: 10px;   
+    font-size: 16px;    
 }
-.Allbody .div1 .CategoryBlock .category .RangeNumber .RangeType .nbText{   
+.Allbody .div1 .CategoryBlock .category .RangeNumber .RangeType .nbText{ 
+    margin-left: 3px;  
     border: 1px solid rgb(221, 221, 221);
-    width: 100px;
-    height: 40px;
+    width: 80px;
+    height: 35px;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 10px
@@ -177,6 +179,6 @@
     flex: auto;
 }
 .div2{
-    width: 80%;
+    width: 100%;
     flex: auto;
 }
