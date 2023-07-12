@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>付款方式</title>
     <link rel="stylesheet" href="../CSS/ShoppingCart.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 </head>
+
 <body>
     <div class="shoppingCartContainer">
         <div class="orderStatus">
@@ -39,7 +42,7 @@
                     <th>小計</th>
                 </tr>
             </thead>
-            <tbody >
+            <tbody>
                 <tr>
                     <td>
                         <img src="../Images/Product/日系連身吊帶褲.jpg" alt="日系連身吊帶褲" width="80">
@@ -63,34 +66,50 @@
                     <td>藍色</td>
                     <td>1</td>
                     <td>???</td>
-                </tr>
-                <tr>
-
                 </tr>
             </tbody>
         </table>
         <div>
-            <div class="bg-dark text-white p-2 text-center rounded">付款與運送方式</div>
-            <label class="p-3">付款方式:</label>
-            <select class="form-select" aria-label="Default select example">
+            <div class="bg-dark text-white p-2 text-center rounded fw-bold fs-5">付款與運送方式</div>
+            <label class="m-3">付款方式:</label>
+            <select class="form-select w-25">
                 <option selected>-請選擇-</option>
                 <option value="1">信用卡結帳</option>
                 <option value="2">貨到付款</option>
                 <option value="3">ATM匯款</option>
-              </select>
-                <label class="p-3">運送方式:</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>-請選擇-</option>
-                    <option value="1">便利商店</option>
-                    <option value="2">郵寄</option>
-                    <option value="3">宅配</option>
-                </select>
+            </select>
+            <label class="m-3">運送方式:</label>
+            <select class="form-select w-25">
+                <option selected>-請選擇-</option>
+                <option value="1">便利商店</option>
+                <option value="2">郵寄</option>
+                <option value="3">宅配</option>
+            </select>
         </div>
-        <div class="checkInformation p-2 my-4 rounded">
+        <div class="border rounded my-4 border-dark-subtle p-2 ">
+            <div class=" p-2 my-2 d-flex">
+                <div class=" fw-bold" style="width: 90px;">商品總額: $</div>
+                <div class=" text-end" style="width: 90px;">123</div>
+            </div>
+            <div class="p-2 my-2 d-flex">
+                <div class="fw-bold" style="width: 90px;">運送費用: $</div>
+                <div class="text-end" style="width: 90px;">123</div>
+            </div>
+            <div class=" p-2 my-2 d-flex">
+                <div class="fw-bold lh-lg" style="width: 90px;">應付總額: $</div>
+                <div class="text-end text-danger fw-bold fs-5" style="width: 90px;">123</div>
+            </div>
+        </div>
+        <div class="p-2 text-center">
+            <input type="button" value="返回購物車" class="btn btn-outline-dark">
+            <input type="submit" value="下一步" class="btn btn-dark">
+        </div>
 
-        </div>
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
