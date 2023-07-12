@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap');
+*{
+    font-family: "Shippori Mincho", serif;
+    padding: 0;
+    margin: 0;
+}
+.marker{
+    border: rebeccapurple 1px solid;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+   text-align: end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+li:hover
+{
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(17, 106, 249);
+}
+.reviewContent{
+    border-top: 1px solid cornflowerblue;
+    
+    
+}
+.reviewContent div{
+    /*border-bottom:1px dotted cornflowerblue ;*/
+}
+.reviewContent div.minipuoductCard{
+text-align: center;
+}
+.reviewContent .commentContext {
+   
+    overflow: hidden;
+    border: 1px royalblue solid;
+}

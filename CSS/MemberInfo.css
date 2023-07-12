@@ -18,10 +18,11 @@ li{
     margin-bottom: 20px;}
     
     
+    
 a{
     text-decoration: none;
     color: black;
 }
-.col{
-    
-}    
+.serviceTitle{
+    color: black;
+}  
