@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>員工管理</title>
     <link rel="stylesheet" href="../CSS/Employee.css">
-
+    
 
 </head>
 <body>
@@ -15,42 +15,87 @@
                 <h1>員工管理</h1>
             </div>
         </div>
-        <table class="table">
+        <div class="EmployeeAdd">
+            <input type="button" value="新增員工"  style="width:150px;height:50px;" class="AddButton">
+        </div>
+        <table class="EmployeeTable">
             <thead>
-                <tr>
-                    <th class="th">頭貼</th>
-                    <th class="th">員工姓名</th>
-                    <th class="th">手機號碼</th>
-                    <th class="th">員工信箱</th>
-                    <th class="th">註冊日期</th>
-                    <th class="th">操作</th>
-                    <th class="th">寄信</th>
+                <tr class="EmployeeTitle">
+                    <th width="180">頭貼</th>
+                    <th width="180">員工姓名</th>
+                    <th width="180">手機號碼</th>
+                    <th width="350">員工信箱</th>
+                    <th width="200">註冊日期</th>
+                    <th width="150">修改</th>
+                    <th width="150">刪除</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="td">
-                        <img src="../Images/EmployeePhoto/peter.png" alt="Peter" >
+                <tr class="EmployeeTr">
+                    <td class="EmployeeTd" >
+                        <img src="../Images/EmployeePhoto/peter.png" alt="Peter" width="40" height="40">
                     </td>
-                    <td class="td">Peter</td>
-                    <td class="td">0988888888</td>
-                    <td class="td">peter@gmail.com</td>
-                    <td class="td">2020/02/02</td>
-                    <td class="td"></td>
-                    <td class="td"></td>
+                    <td >Peter</td>
+                    <td >0988888888</td>
+                    <td >peter@gmail.com</td>
+                    <td >2020/02/02</td>
+                    <td >
+                        <a href=""><img src="../Images/EmployeePhoto/edit.png" alt="Edit" width="40" height="40"></a>
+                    </td>
+                    <td >
+                        <a href=""><img src="../Images/EmployeePhoto/delete.png" alt="Delete" width="40" height="40" ></a>
+                    </td>
                 </tr>
-                <tr>
-                    <td class="td"></td>
-                    <td class="td">Jacky</td>
-                    <td class="td">0999999999</td>
-                    <td class="td">jacky@gmail.com</td>
-                    <td class="td">2000/01/01</td>
-                    <td class="td"></td>
-                    <td class="td"></td>
+                <tr class="EmployeeTr">
+                    <td >
+                        <img src="../Images/EmployeePhoto/Jacky.png" alt="Jacky" width="40" height="40">
+                    </td>
+                    <td >Jacky</td>
+                    <td >0999999999</td>
+                    <td >jacky@gmail.com</td>
+                    <td >2000/01/01</td>
+                    <td >
+                        <a href=""><img src="../Images/EmployeePhoto/edit.png" alt="Edit" width="40" height="40"></a>
+                    </td>
+                    <td >
+                        <a href=""><img src="../Images/EmployeePhoto/delete.png" alt="Delete" width="40" height="40" ></a>
+                    </td>
+                </tr>
+                <tr class="EmployeeTr">
+                    <td >
+                        <img src="../Images/EmployeePhoto/Jacky.png" alt="Jacky" width="40" height="40">
+                    </td>
+                    <td >Jacky</td>
+                    <td >0999999999</td>
+                    <td >jacky@gmail.com</td>
+                    <td >2000/01/01</td>
+                    <td >
+                        <a href=""><img src="../Images/EmployeePhoto/edit.png" alt="Edit" width="40" height="40"></a>
+                    </td>
+                    <td >
+                        <a href=""><img src="../Images/EmployeePhoto/delete.png" alt="Delete" width="40" height="40" ></a>
+                    </td>
+                </tr>
+                <tr class="EmployeeTr">
+                    <td >
+                        <img src="../Images/EmployeePhoto/Jacky.png" alt="Jacky" width="40" height="40">
+                    </td>
+                    <td >Jacky</td>
+                    <td >0999999999</td>
+                    <td >jacky@gmail.com</td>
+                    <td >2000/01/01</td>
+                    <td >
+                        <a href=""><img src="../Images/EmployeePhoto/edit.png" alt="Edit" width="40" height="40"></a>
+                    </td>
+                    <td >
+                        <a href=""><img src="../Images/EmployeePhoto/delete.png" alt="Delete" width="40" height="40" ></a>
+                    </td>
                 </tr>
             </tbody>
         </table>
+        
     </div>
+    
 
 </body>
 </html>
