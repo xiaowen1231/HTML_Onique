@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Work Sans', sans-serif;
+}
+.ProductList{
+    width: 70%;
+    margin: auto;
+   
+}
+.ProductList .ProductListTop{
+    background-color: #272727;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ProductList .ProductListTop span{
+    font-size: 42px;
+    font-weight: bold;
+}
+.ProductListFunction{
+    display: flex;
+    margin: 10px 0;
+}
+.ProductListFunction .btAddProduct .AddProduct span{
+    padding: 0 15px ;
+}
+.ProductListFunction .txtProductName{
+    display: flex;
+    margin-right: 60px;
+}
+.ProductListFunction .txtProductName span{
+    margin: auto;     
+}
+.ProductListFunction .btAddProduct{
+    margin-left: 20px;
+    margin-right: 60px;
+}
+.ProductListFunction .btAddProduct span{
+    font-size: 16px;
+}
+.ProductListFunction .chProductCategory{
+    display: flex;
+    font-size: 16px;
+}
+.ProductListFunction .chProductCategory span{
+    margin: auto;
+}
+.ProductListFunction .chProductCategory .combox{
+    font-size: 16px;
+}
+.ProductListFunction .Search{
+    display: flex;
+    margin-left: 450px;
+    margin-right: 25px;
+}
+.ProductListFunction .Search .btSearch{
+    padding:0 15px;
+}
+.ProductListFunction .Search .btSearch span{
+    font-size: 16px;
+}
+.ProductListFunction .ClearSearch .btClearSearch{
+    padding: 0 15px;
+}
+.ProductListFunction .ClearSearch .btClearSearch span{
+    font-size: 16px;
+}
+.GridView{
+    width: auto;
+}
+.GridView .GridViewList .GridViewTable{
+    white-space: nowrap;
+}
+.GridView .GridViewList .GridViewTable .thStyle{
+    background-color: #272727;
+    color: white;
+    font-size: 16px;
+}
+
+.GridView .GridViewList .GridViewTable .ViewProductList td{
+   border-left: 1px solid black;
+    padding: 10px 0px;
+    padding-left: 5px;
+}
