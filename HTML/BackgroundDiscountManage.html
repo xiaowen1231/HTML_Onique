@@ -8,6 +8,7 @@
 
 </head>
 <body>
+    <div class="container" >
     <div>
         <div class="title">
             <h1>優惠管理</h1>
@@ -16,7 +17,7 @@
             <input type="submit" value="新增" class="btn btn-primary">
         </div>
     </div>
-    <table class="table table-primary table-striped">
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>活動編號</th>
@@ -52,12 +53,23 @@
             </tr>
         </tbody>
     </table>
-    <div>
-        <img src="/Images/Button/first.png">
-        <img src="/Images/Button/previous.png">
-        <img src="/Images/Button/one.png">
-        <img src="/Images/Button/next.png">
-        <img src="/Images/Button/end.png">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
 </body>
 </html>
