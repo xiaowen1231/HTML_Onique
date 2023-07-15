@@ -22,13 +22,13 @@
     display: flex;
 }
 .BGproductDetails{
-    flex: 1;
+   flex: 1;
 }
 .BGImage{
-    flex: 0.8;
+   flex: 1;
 }
 .mx-2 .txtproduct{
-    white-space: normal;
+    white-space: nowrap;
     width: 400px;
-    height: 200px;
+    height: 230px;
 }
