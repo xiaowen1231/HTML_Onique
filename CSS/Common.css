@@ -3,17 +3,29 @@
     height: 25px;
     border-radius: 50%;
 }
+
 .circle-size-40 {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
+
+.circle-size-60 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
 .color-95CACA {
     background-color: #95CACA;
 }
 
 .color-D9B3B3 {
     background-color: #D9B3B3;
+}
+
+.color-FFFCEC {
+    background-color: #FFFCEC;
 }
 
 .color-66B3FF {
@@ -34,13 +46,20 @@
 
 .color-FF7575 {
     background-color: #FF7575;
+}.color-fff {
+    background-color: #fff;
 }
-.width-90px{
+
+.width-90px {
     width: 90px;
 }
-.width-50px{
+
+.width-50px {
     width: 50px;
 }
-.cover{
+.width-120px {
+    width: 120px;
+}
+.cover {
     object-fit: cover;
 }
