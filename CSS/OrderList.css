@@ -1,0 +1,46 @@
+.circle-size-25 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.circle-size-40 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.color-95CACA {
+    background-color: #95CACA;
+}
+
+.color-D9B3B3 {
+    background-color: #D9B3B3;
+}
+
+.color-66B3FF {
+    background-color: #66B3FF;
+}
+
+.color-FFE66F {
+    background-color: #FFE66F;
+}
+
+.color-CA8EC2 {
+    background-color: #CA8EC2;
+}
+
+.color-FFAD86 {
+    background-color: #FFAD86;
+}
+
+.color-FF7575 {
+    background-color: #FF7575;
+}
+.width-90px{
+    width: 90px;
+}
+.width-50px{
+    width: 50px;
+}
+.cover{
+    object-fit: cover;
+}
