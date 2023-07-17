@@ -3,14 +3,24 @@
     padding:0;
     font-family: 'Work Sans', sans-serif;
 }
+.PBbody{
+    border-radius: 8px;
+}
+.EdProductDetail{
+    width: 250px;
+    height: 270px;   
+    text-align:center;
+    flex:0.5;
+    font-weight: bold;
+    margin-top: 30px;
+    
+}
 .BackgroundEditProduct{
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 .BackgroundEditProduct .EditProductTop{    
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    text-align: center;    
 }
 .BackgroundEditProduct .EditProductTop span{
     font-size: 36px;
@@ -18,15 +28,24 @@
 }
 .BGProduct{
     display: flex;
-}
-.BGproductDetails{
-   flex: 1;
+    flex: 2;
 }
 .BGImage{
+    border: 1px solid red;
    flex: 1;
 }
 .mx-2 .txtproduct{
     white-space: nowrap;
     width: 400px;
     height: 230px;
+}
+.btfun{
+    width: 70%;
+    margin: auto;
+    border: 1px solid red;
+}
+.ProductImage{
+    height: 300px;
+    margin-top: 50px;
+    flex: 0.5;
 }
