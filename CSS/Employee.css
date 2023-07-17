@@ -48,7 +48,8 @@ table tbody tr:nth-child(odd){  /*設定奇數列顏色*/
 
 .EmployeeAdd{
     height: 80px;
-
+    
+    border: 2px solid orange;
 }
 
 .AddButton{
@@ -58,6 +59,7 @@ table tbody tr:nth-child(odd){  /*設定奇數列顏色*/
   border-radius:10px;
   cursor:pointer; /*改變滑鼠游標形狀 */
   font-size: 17px;
+  
 }
 .AddButton:hover{
     color:white;
