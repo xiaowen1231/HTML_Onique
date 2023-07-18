@@ -70,4 +70,6 @@
 
 .cover {
     object-fit: cover;
+}.width-300px {
+    width: 300px;
 }

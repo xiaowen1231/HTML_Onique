@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/EmployeeCreate.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Reset.css">
+    <link rel="stylesheet" href="../CSS/Common.css">
     <title>新增員工</title>
 </head>
+
 <body>
     <div class="EmployeeCreateContent" style="border:2px solid yellow">
-        <div class="border border-dark-subtle rounded my-2 p-2" >
-            <div class="p-2 bg-dark text-white rounded" >新增員工</div>
-            <div class="EmployeeHalf" style="border:2px solid pink">
-                <div class="EmployeeRight">
-                    <div class="p-2 my-2" style="border:2px solid green">
-                    <div class="p-2 d-flex"  >
+        <div class="border border-dark-subtle rounded my-2 p-2">
+            <div class="p-2 bg-dark text-white rounded">新增員工</div>
+
+            <div class="EmployeeRight d-flex">
+                <div class="EmployeeHalf" style="border:2px solid pink">
+                    <div class="EmployeeLeft border border-dark-subtle">
+                        <img src="../Images/EmployeePhoto/peter.png" alt="Peter" width="300" height="300">
+                    </div>
+                </div>
+                <div class="p-2 my-2" style="border:2px solid green">
+                    <div class="p-2 d-flex">
                         <div class="text-end" style="width: 100px;">姓名</div>
                         <div class="mx-3">
                             <input type="text" class="form-control" placeholder="員工姓名" />
@@ -55,7 +63,7 @@
                     <div class="p-2 d-flex align-items-center">
                         <div class="text-end" style="width: 100px;">身分</div>
                         <div class="mx-3">
-                            <input type="text" class="form-control" >
+                            <input type="text" class="form-control">
                         </div>
                     </div>
                     <div class="p-2 d-flex align-items-center">
@@ -83,20 +91,34 @@
                     <div class="p-2 d-flex align-items-center">
                         <div class="text-end" style="width: 100px;">註冊日期</div>
                         <div class="mx-3">
-                            <input type="text" class="form-control" >
+                            <input type="text" class="form-control">
                         </div>
                     </div>
                     <div class="ButtonRegion">
-                        <input type="button" value="確定新增"  style="width:150px;height:50px;" class="AddButton">
-                        <input type="button" value="取消"  style="width:150px;height:50px;" class="AddButton">
+                        <input type="button" value="確定新增" style="width:150px;height:50px;" class="AddButton">
+                        <input type="button" value="取消" style="width:150px;height:50px;" class="AddButton">
                     </div>
                 </div>
-                <div class="EmployeeLeft">
-                    <img src="../Images/EmployeePhoto/peter.png" alt="Peter" width="300" height="300">
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-2 p-2 border border-secondary rounded-4 shadow">
+        <div class=" p-2 row ">
+            <div class=" col-4 ">
+                <div class=" p-2 d-flex justify-content-center">
+                        <img src="../Images/ManagerPhoto/範例頭貼1.jpg"
+                            class="rounded rounded-4 width-300px" />
+                </div>
+                <div>
+                    <input type="file" name="" id="" class="form-control my-2">
                 </div>
             </div>
-            </div>
-        </div> 
-    </div> 
+            <div class="border col-8">456</div>
+        </div>
+    </div>
 </body>
+
 </html>
