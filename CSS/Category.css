@@ -2,60 +2,35 @@
     margin:0;
     padding:0;
 }
-.Allbody{
-    width: 80%;
 
-    margin: 20px auto;
-    padding: 20px;
-
-    display: flex;    
-}
-.Allbody .div1{
-    box-sizing: border-box;
-
-    width: 15%;
-
-    padding: 5px;
-}
-.Allbody .div1 .CategoryBlock{
-    margin-bottom: 20px ;
-    padding: 5px;
-
-    border: 0.5px #F0F0F0 solid;
-    border-radius: 10px;
+.CategoryBlock{
     
     box-shadow: 5px 5px 5px #ADADAD	; 
 }
-.Allbody .div1 .CategoryBlock .allProduct{
-    margin: 10px 0;
-    padding: 5px;
-
-    border-radius: 5px;
-
-    background-color: #272727;
-    color: white;
-
-    font-weight: bold;
-    font-size: 16px;
-
-    overflow: hidden;
-    text-align: center;
+.CategoryBlock div{
+    height: 35px;
+    line-height: 35px;
+    text-align:start;
 }
-.Allbody .div1 .CategoryBlock .newProduct .ProductItems{
-    list-style-position: inside;
+.CategoryBlock a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 5px;
 }
-.Allbody .div1 .CategoryBlock .newProduct .ProductItems li{
-    padding: 5px;
+.CategoryBlock .ProductNavbarTitle{
     
-    font-size: 14px;
+    background-color: #595757;
+    color: white;
+    font-weight: bold;   
+    text-align: center;
 }
-.Allbody .div1 .CategoryBlock .category .Range{
-    margin: 10px 0;
-    padding: 5px;
 
-    border-radius: 5px;
+.category .Range{
+    height: 35px;
+    line-height: 35px;
 
-    background-color: #272727;
+
+    background-color: #595757;
     color: white;
 
     font-weight: bold;
@@ -64,27 +39,28 @@
     overflow: hidden;
     text-align: center;
 }
-.Allbody .div1 .CategoryBlock .category{
-    list-style-position: inside;
-    font-weight: bold;    
+.priceRangeBlock{
+    box-shadow: 5px 5px 5px #ADADAD	; 
+
 }
-.Allbody .div1 .CategoryBlock .category .startRange{
+
+.priceRangeBlock .category .startRange{
     margin-left: 10px;
     font-size: 16px;
     color: darkgrey;   
 }
-.Allbody .div1 .CategoryBlock .category .RangeNumber{ 
+.priceRangeBlock .category .RangeNumber{ 
     display: flex;
     margin-bottom:10px ;    
 }
-.Allbody .div1 .CategoryBlock .category .RangeNumber .RangeType{
+.priceRangeBlock .category .RangeNumber .RangeType{
     margin-right: 20px;
 }
-.Allbody .div1 .CategoryBlock .category .RangeNumber .RangeType p{ 
+.priceRangeBlock .category .RangeNumber .RangeType p{ 
     margin-left: 10px;   
     font-size: 16px;    
 }
-.Allbody .div1 .CategoryBlock .category .RangeNumber .RangeType .nbText{ 
+.priceRangeBlock .category .RangeNumber .RangeType .nbText{ 
     margin-left: 3px;  
     border: 1px solid rgb(221, 221, 221);
     width: 80px;
@@ -100,31 +76,19 @@
     margin-right: 5px;
     margin-bottom: 15px;
 }
-.Ptitle{
-    width:90%;
-    margin-left: 62px;
-    margin-top:10px;
-    border-radius: 10px;
-    background-color: black;
-    display: flex;
-    justify-content: center;    
-   }
+
 .Ptitle p{
     color: white;
     font-size: 40px;
     font-weight: bold;    
 }
 
-.ProductWall2{
-    text-align: center;  
-    width: 100%;
-    margin: 10px auto;
-    padding:10px 0;    
 
-}
+
+
 .productCard{
     margin: 0 10px;
-    display: inline-block;
+    
     border: 0.5px #F0F0F0 solid;
     width: 260px;
     border-radius: 10px;
@@ -138,13 +102,13 @@
     height: 240px;
     overflow: hidden;
 }
-.ProductWall2 .productCard .productPhoto img{
+.productCard .productPhoto img{
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 }
-.ProductWall2 .productCard .productName{
+.productCard .productName{
     margin: 5px ;
     padding: 5px;
     background-color: #272727;
@@ -153,32 +117,11 @@
     text-align: center;
     font-weight: bold;
 }
-.ProductWall2 .productCard .productPrice{
+.productCard .productPrice{
     display: inline-block;
     padding: 5px;
     text-align:center;
     font-size: 0.8em;
 }
-.ProductWall2 .productCard .productIcon{
-    display: flex;
-    gap: 5px;    
-}
-.ProductWall2 .productCard .productIcon .cardIcon{
 
-    width: 30px;
-    height: 30px;
-}
-.ProductWall2 .productCard .productIcon .cardIcon img{
-    width: 100%;
-}
 
-.Allbody{
-    display: flex;
-}
-.div1{
-    flex: auto;
-}
-.div2{
-    width: 100%;
-    flex: auto;
-}
