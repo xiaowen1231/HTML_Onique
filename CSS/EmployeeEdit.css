@@ -32,3 +32,32 @@
     background-color:black;
     
   }
+
+  .EditAddButton{
+    border:1;
+    background-color:black;
+    color:white;
+    border-radius:10px;
+    cursor:pointer; /*改變滑鼠游標形狀 */
+    font-size: 17px;
+  }
+  
+  .EditAddButton:hover{
+    color:black;
+    background-color:white;
+  }
+  
+  .AddButton{
+    border:1;
+    background-color:white;
+    color:black;
+    border-radius:10px;
+    cursor:pointer; /*改變滑鼠游標形狀 */
+    font-size: 17px;
+  }
+  
+  .AddButton:hover{
+      color:white;
+      background-color:black;
+      
+    }
