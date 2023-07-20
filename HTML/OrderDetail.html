@@ -9,16 +9,21 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/Reset.css">
     <link rel="stylesheet" href="../CSS/Common.css">
+    <style>
+        .dollar::after{
+            content: "$";
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container border rounded my-2 color-FCFCFC">
+    <div class="container  rounded my-2">
         <div class="fs-3 fw-bold text-center border-bottom border-dark-subtle p-3">訂單明細</div>
         <div class="shadow-sm p-3 m-3 rounded d-flex gap-2 justify-content-between bg-body-tertiary border">
             <div class="d-flex gap-3 p-1">
                 <div class="d-flex gap-2 align-items-center">
                     <img src="../Images/ManagerPhoto/範例頭貼1.jpg" alt="" class="circle-size-60 cover">
-                    <div class="fw-bold fs-5"> , Aki</div>
+                    <div class="fw-bold fs-5"> Aki</div>
                 </div>
                 <div class="d-flex gap-2 align-items-center">
                     <div class="fw-bold">訂單編號 : </div>
@@ -129,18 +134,18 @@
             </div>
             <div class="border rounded my-4 border-dark-subtle p-2 ">
                 <div class=" p-2 my-2 d-flex">
-                    <div class=" fw-bold" style="width: 95px;">商品總額: $</div>
+                    <div class=" fw-bold" style="width: 95px;"><span class="dollar">商品總額</span></div>
                     <div class=" text-end" style="width: 95px;">4060</div>
                 </div>
                 <div class="p-2 my-2">
                     <div class="d-flex ">
-                        <div class="fw-bold" style="width: 95px;">運送費用: $</div>
+                        <div class="fw-bold" style="width: 95px;"><span class="dollar">運送費用</span></div>
                         <div class="text-end " style="width: 95px;">60</div>
                     </div>
                 </div>
                 <div class="p-2 my-2">
                     <div class="d-flex ">
-                        <div class="fw-bold lh-lg" style="width: 95px;">應付總額: $</div>
+                        <div class="fw-bold lh-lg" style="width: 95px;"><span class="dollar">應付總額</span></div>
                         <div class="text-end text-danger fw-bold fs-5 " style="width: 95px;">4120</div>
                     </div>
                 </div>

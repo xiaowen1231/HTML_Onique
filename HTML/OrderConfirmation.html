@@ -77,23 +77,39 @@
         </table>
 
         <div class="border border-dark-subtle rounded my-2 p-2">
-            <div class="p-2 bg-dark text-white rounded">
-                付款與運送方式</div>
-            <label class="m-3">付款方式:</label>
-            <select class="form-select w-25">
-                <option selected>-請選擇-</option>
-                <option value="1">信用卡結帳</option>
-                <option value="2">貨到付款</option>
-                <option value="3">ATM匯款</option>
-            </select>
-            <label class="m-3">運送方式:</label>
-            <select class="form-select w-25">
-                <option selected>-請選擇-</option>
-                <option value="1">便利商店</option>
-                <option value="2">郵寄</option>
-                <option value="3">宅配</option>
-            </select>
+            <div class="p-2 bg-dark text-white rounded">付款與運送方式</div>
+
+
+           
+            <div class="p-2 my-2">
+                    <div class="p-2 d-flex align-items-center">
+                        <div class="text-end" style="width: 100px;">付款方式:</div>
+                        <div class="mx-3"style="width: 237px;">
+                            <select class="form-select">
+                                <option selected>-請選擇-</option>
+                                <option value="1">便利商店取貨</option>
+                                <option value="2">郵寄</option>
+                                <option value="3">宅配</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="p-2 d-flex align-items-center">
+                        <div class="text-end" style="width: 100px;">運送方式:</div>
+                        <div class="mx-3" style="width: 237px">
+                            <select class="form-select">
+                                <option selected>-請選擇-</option>
+                                <option value="1">信用卡結帳</option>
+                                <option value="2">貨到付款</option>
+                                <option value="3">ATM匯款</option>
+                            </select>
+                        </div>
+                    </div>
+            </div>        
         </div>
+        
+                
+
+            
         <div class="border border-dark-subtle rounded my-2 p-2">
             <div class="p-2 bg-dark text-white rounded">
                 請填寫收件人資料</div>
@@ -103,6 +119,9 @@
                     同收件人地址
                 </label>
             </div>
+
+
+                
             <div class="p-2 my-2">
                 <div class="p-2 d-flex">
                     <div class="text-end" style="width: 100px;">帳號</div>
@@ -152,6 +171,10 @@
                 </div>
             </div>
         </div>
+
+
+
+
         <div class="border rounded my-4 border-dark-subtle p-2 ">
             <div class=" p-2 my-2 d-flex">
                 <div class=" fw-bold" style="width: 95px;">商品總額: $</div>
@@ -159,8 +182,8 @@
             </div>
             <div class="p-2 my-2 d-flex justify-content-between">
                 <div class="d-flex ">
-                    <div class="fw-bold" style="width: 95px;">運送費用: </div>
-                    <div class="text-end " style="width: 95px;"><span class="dollar">123</span></div>
+                    <div class="fw-bold" style="width: 95px;">運送費用: $</div>
+                    <div class="text-end " style="width: 95px;">123</div>
                 </div>
                 <div class="d-flex">
                     <div class="fw-bold text-black-50" style="width: 95px;">付款方式</div>
@@ -178,6 +201,10 @@
                 </div>
             </div>
         </div>
+
+
+
+        
         <div class="p-2 text-center">
             <input type="button" value="返回購物車" class="btn btn-outline-dark" style="width: 150px;">
             <input type="submit" value="提交訂單" class="btn btn-dark" style="width: 150px;">
