@@ -54,16 +54,16 @@ table tbody tr:nth-child(odd){  /*設定奇數列顏色*/
 
 .AddButton{
   border:1;
-  background-color:white;
-  color:black;
+  background-color:black;
+  color:white;
   border-radius:10px;
   cursor:pointer; /*改變滑鼠游標形狀 */
   font-size: 17px;
   
 }
 .AddButton:hover{
-    color:white;
-    background-color:black;
+    color:black;
+    background-color:white;
     
   }
 
@@ -92,4 +92,16 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 .EmployeePagination{
     text-align:center;
     padding: 100px;
+}
+
+.imgbox{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
