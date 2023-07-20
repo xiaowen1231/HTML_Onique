@@ -18,6 +18,20 @@
     text-align: center;
 }
 
+.CreateAddButton{
+  border:1;
+  background-color:black;
+  color:white;
+  border-radius:10px;
+  cursor:pointer; /*改變滑鼠游標形狀 */
+  font-size: 17px;
+}
+
+.CreateAddButton:hover{
+  color:black;
+  background-color:white;
+}
+
 .AddButton{
   border:1;
   background-color:white;
