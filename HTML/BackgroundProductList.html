@@ -1,184 +1,148 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/BackgroundProductList.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>後台-商品管理</title>
 </head>
+
 <body>
-    <div class="ProductList">
-        <div class="ProductListTop">
-            <span>商品清單</span>
+    <div class="container justify-content-center border shadow my-2 rounded ">
+        <div class="row text-center border-bottom mx-2">
+            <div class="fs-4 fw-bold p-2">商品清單</div>
         </div>
-        <div class="ProductListFunction">
-            <div class="btAddProduct">
-                <button class="AddProduct">
-                    <span>新增商品</span>
-                </button>                
+        <div class="p-2">
+            <div class="d-flex p-2 align-items-center">
+                <div class="col-2" style="margin-left: 4%;">
+                    <button class="btn btn-dark">新增商品</button>
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                    <div class="fw-bold mx-2">商品名稱:</div>
+                    <div>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                    <div class="fw-bold mx-2">商品分類:</div>
+                    <div>
+                        <select class="form-select">
+                            <option>請選擇商品分類</option>
+                            <option>T恤</option>
+                            <option>襯衫</option>
+                            <option>毛衣</option>
+                            <option>外套</option>
+                            <option>背心</option>
+                            <option>牛仔褲</option>
+                            <option>休閒褲</option>
+                            <option>短褲</option>
+                            <option>飾品</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-3 text-end" style="margin-left: 2%">
+                    <button class="btn btn-dark fw-bold">查詢</button>
+                    <button class="btn btn-outline-dark fw-bold mx-3">取消查詢</button>
+                </div>
             </div>
-            <div class="txtProductName">
-                <span>商品名稱:</span>
-                <input type="text" class="txtSearchName">
-            </div>
-            <div class="chProductCategory">
-                <span>商品分類:</span>
-                <select class="combox">
-                    <option>請選擇商品分類</option>
-                    <option>T恤</option>                     
-                    <option>襯衫</option>
-                    <option>毛衣</option>
-                    <option>外套</option>
-                    <option>背心</option>
-                    <option>牛仔褲</option>
-                    <option>休閒褲</option>
-                    <option>短褲</option>
-                    <option>飾品</option>
-                </select>
-            </div> 
-            <div class="Search">
-                <button class="btSearch">
-                    <span>查詢</span>
-                </button>
-            </div> 
-            <div class="ClearSearch">
-                <button class="btClearSearch">
-                    <span>取消查詢</span>
-                </button>
-            </div>                         
         </div>
-        <div class="GridView">
-            <div class="GridViewList">
-                <table class="GridViewTable">
-                    <thead class="table-dark">
-                        <tr>
-                            <th width="200" class="thStyle" >商品名稱</th>
-                            <th width="100" class="thStyle" >商品價格</th>
-                            <th width="450" class="thStyle" >商品描述</th>
-                            <th width="120" class="thStyle" >商品分類</th>
-                            <th width="150" class="thStyle" >供應商</th>
-                            <th width="150" class="thStyle" >上架時間</th>
-                            <th width="150" class="thStyle" >下架時間</th>
-                        </tr>
-                    </thead>
-                    <tr class="ViewProductList">
-                        <td>
-                            不規則條紋上衣
-                        </td>
-                        <td>
-                            TWD.800
-                        </td>
-                        <td>
-                            融合銅氨纖維的光澤感及麻的天然質感的襯衫。                            
-                        </td>
-                        <td>
-                            上衣
-                        </td>
-                        <td>
-                            以純
-                        </td>
-                        <td>
-                            2023/5/24
-                        </td>
-                        <td>
-                            2023/8/25
-                        </td>
+        <div class="container justify-content-center d-flex my-3">
+            <table class="table align-middle text-center border">
+                <thead class="table-dark">
+                    <tr>
+                        <th width="200">商品圖片</th>
+                        <th width="250">商品名稱</th>
+                        <th width="250">商品價格</th>
+                        <th width="180">商品分類</th>
+                        <th width="150">編輯</th>
+                        <th width="150">刪除</th>
                     </tr>
-                    <tr class="ViewProductList">
-                        <td>
-                            打褶寬褲
-                        </td>
-                        <td>
-                            TWD.1499
-                        </td>
-                        <td>
-                            帶有硬挺感又透氣的夏季長褲。                           
-                        </td>
-                        <td>
-                            休閒褲
-                        </td>
-                        <td>
-                            杰克瓊斯
-                        </td>
-                        <td>
-                            2023/6/10
-                        </td>
-                        <td>
-                            2023/9/10
-                        </td>
-                    </tr>
-                    <tr class="ViewProductList">
-                        <td>
-                            高機能填充登山連帽外套
-                        </td>
-                        <td>
-                            TWD.2500
-                        </td>
-                        <td>
-                            本季採撥水加工，能彈去雨滴、水滴，適合冬季的吸濕發熱布料，機能性再進化。                            
-                        </td>
-                        <td>
-                            外套
-                        </td>
-                        <td>
-                            恆源祥
-                        </td>
-                        <td>
-                            2023/4/28
-                        </td>
-                        <td>
-                            2023/7/9
-                        </td>
-                    </tr>
-                    <tr class="ViewProductList">
-                        <td>
-                            緹花針織開襟衫
-                        </td>
-                        <td>
-                            TWD.1300
-                        </td>
-                        <td>
-                            能擔任春季穿搭主角的獨特緹花織紋開襟衫。                            
-                        </td>
-                        <td>
-                            毛衣
-                        </td>
-                        <td>
-                            愛慕
-                        </td>
-                        <td>
-                            2023/12/1
-                        </td>
-                        <td>
-                            2024/4/1
-                        </td>
-                    </tr>
-                    <tr class="ViewProductList">
-                        <td>
-                            UR TECH COOL涼感機能層次感T恤
-                        </td>
-                        <td>
-                            TWD.800
-                        </td>
-                        <td>
-                            融合銅氨纖維的光澤感及麻的天然質感的襯衫。                            
-                        </td>
-                        <td>
-                            T恤
-                        </td>
-                        <td>
-                            美特斯邦威
-                        </td>
-                        <td>
-                            2023/5/24
-                        </td>
-                        <td>
-                            2023/8/25
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                </thead>
+                <tr>
+                    <td>
+                        <img src="../Images/Product/不規則條紋上衣.jpg" class="rounded" alt="不規則條紋上衣" width="120">
+                    </td>
+                    <td>
+                        不規則條紋上衣
+                    </td>
+                    <td>
+                        TWD.800
+                    </td>
+                    <td>
+                        上衣
+                    </td>
+                    <td>
+                        2023/5/24
+                    </td>
+                    <td>
+                        2023/8/25
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-center">
+                        <img src="../Images/Product/古著拼接.jpg" class="rounded" alt="古著拼接" width="120">
+                    </td>
+                    <td>
+                        古著拼接
+                    </td>
+                    <td>
+                        TWD.1499
+                    </td>
+                    <td>
+                        外套
+                    </td>
+                    <td>
+                        2023/6/10
+                    </td>
+                    <td>
+                        2023/9/10
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../Images/Product/丹寧亨利領襯衫.jpg" class="rounded" alt="丹寧亨利領襯衫" width="120">
+                    </td>
+                    <td>
+                        丹寧亨利領襯衫
+                    </td>
+                    <td>
+                        TWD.2500
+                    </td>
+                    <td>
+                        襯衫
+                    </td>
+                    <td>
+                        2023/4/28
+                    </td>
+                    <td>
+                        2023/7/9
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../Images/Product/日系連身吊帶褲.jpg" class="rounded" alt="日系連身吊帶褲" width="120">
+                    </td>
+                    <td>
+                        日系連身吊帶褲
+                    </td>
+                    <td>
+                        TWD.1300
+                    </td>
+                    <td>
+                        毛衣
+                    </td>
+                    <td>
+                        2023/12/1
+                    </td>
+                    <td>
+                        2024/4/1
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>
+
 </html>
