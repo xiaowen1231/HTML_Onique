@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/Navigation.css">
     <link rel="stylesheet" href="/CSS/Footer.css">
     <link rel="stylesheet" href="/CSS/Member.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
 
-     <title>收藏商品</title>
+    <title>收藏商品</title>
     <style>
-
-        *{
+        * {
             padding: 0px;
             margin: 0px;
-            font-family:'Shippori Mincho', serif ;
+            font-family: 'Shippori Mincho', serif;
         }
-        .memberPageContent{
+
+        .memberPageContent {
             width: 1280px;
-            margin:20px auto; 
+            margin: 20px auto;
             display: flex;
             /* background-color: antiquewhite;  */
         }
-        .memberNavbar{  
+
+        .memberNavbar {
             width: 200px;
             display: flex;
             flex-direction: column;
@@ -31,46 +33,52 @@
             /* background-color: bisque; */
         }
 
-        .memberNavbar a{
+        .memberNavbar a {
             text-decoration: none;
             font-size: 16px;
             color: black;
 
         }
-           
-        .memberNavbar .recordLink{
+
+        .memberNavbar .recordLink {
             padding: 30px 10px 10px;
             border-bottom: 1px gray solid;
             /* background-color: aqua; */
-            
+
         }
-        .memberNavbar .mykeepLink{
+
+        .memberNavbar .mykeepLink {
             padding: 10px 10px;
             border-bottom: 1px gray solid;
             /* background-color: aqua; */
         }
-        .memberNavbar .myprofileLink{
+
+        .memberNavbar .myprofileLink {
             padding: 10px 10px;
             border-bottom: 1px gray solid;
             /* background-color: aqua; */
         }
-        .memberPageContent .mykeepRegion{
-            
+
+        .memberPageContent .mykeepRegion {
+
             width: 1040px;
             padding-left: 10px;
             justify-content: start;
         }
-        .memberPageContent .mykeepRegion .mykeepProductRegionLabel{
+
+        .memberPageContent .mykeepRegion .mykeepProductRegionLabel {
             margin: 20px 20px;
         }
-        .memberPageContent .mykeepProductRegion{
 
-            display: flex;            
+        .memberPageContent .mykeepProductRegion {
+
+            display: flex;
             flex-wrap: wrap;
             /* background-color: antiquewhite; */
         }
-        .mykeepProductCard{
-            margin: 10px 10px;         
+
+        .mykeepProductCard {
+            margin: 10px 10px;
             border: 1px #b5b5b5 solid;
             width: 220px;
             height: 380px;
@@ -79,27 +87,29 @@
             padding: 9px;
             text-align: center;
             /* background-color: antiquewhite; */
-            
+
         }
-        .mykeepProductCard .productPhoto{
+
+        .mykeepProductCard .productPhoto {
             border-radius: 5px;
             width: 200px;
             height: 240px;
             overflow: hidden;
         }
-        .mykeepProductCard .productPhoto img{
+
+        .mykeepProductCard .productPhoto img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        .mykeepProductCard a{
+
+        .mykeepProductCard a {
             text-decoration: none;
             color: black;
         }
-
-
     </style>
 </head>
+
 <body>
     <div class="head">
         <div class="nav">
@@ -132,56 +142,63 @@
     <div class="memberPageContent">
         <div class="memberNavbar">
             <div class="recordLink"><a href="MemberInfo.html">訂單</a></div>
-            <div class="mykeepLink"><a href="MemberMykeep.html">收藏</a></div> 
-            <div class="myprofileLink"><a href="MemberProfile.html">個人資料及密碼修改</a></div>    
+            <div class="mykeepLink"><a href="MemberMykeep.html">收藏</a></div>
+            <div class="myprofileLink"><a href="MemberProfile.html">個人資料及密碼修改</a></div>
         </div>
         <div class="mykeepRegion">
             <div class="mykeepProductRegionLabel">
-                <h2>收藏商品</h2></div>
+                <h2>收藏商品</h2>
+            </div>
             <div class="mykeepProductRegion">
-                    <div class="mykeepProductCard">
-                        <a href="#">
-                            <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>                           
-                            <p>商品名</p><p>價格</p>
-                        </a>
-                    </div>
-                    <div class="mykeepProductCard">
-                        <a href="#">
-                            <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>                           
-                            <p>商品名</p><p>價格</p>
-                        </a>
-                    </div>
-                    <div class="mykeepProductCard">
-                        <a href="#">
-                            <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>                           
-                            <p>商品名</p><p>價格</p>
-                        </a>
-                    </div>
-                    <div class="mykeepProductCard">
-                        <a href="#">
-                            <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>                           
-                            <p>商品名</p><p>價格</p>
-                        </a>
-                    </div>
-                    <div class="mykeepProductCard">
-                        <a href="#">
-                            <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>                           
-                            <p>商品名</p><p>價格</p>
-                        </a>
-                    </div>
-                    <div class="mykeepProductCard">
-                        <a href="#">
-                            <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>                           
-                            <p>商品名</p><p>價格</p>
-                        </a>
-                    </div>
-            </div>    
+                <div class="mykeepProductCard">
+                    <a href="#">
+                        <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>
+                        <p>商品名</p>
+                        <p>價格</p>
+                    </a>
+                </div>
+                <div class="mykeepProductCard">
+                    <a href="#">
+                        <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>
+                        <p>商品名</p>
+                        <p>價格</p>
+                    </a>
+                </div>
+                <div class="mykeepProductCard">
+                    <a href="#">
+                        <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>
+                        <p>商品名</p>
+                        <p>價格</p>
+                    </a>
+                </div>
+                <div class="mykeepProductCard">
+                    <a href="#">
+                        <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>
+                        <p>商品名</p>
+                        <p>價格</p>
+                    </a>
+                </div>
+                <div class="mykeepProductCard">
+                    <a href="#">
+                        <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>
+                        <p>商品名</p>
+                        <p>價格</p>
+                    </a>
+                </div>
+                <div class="mykeepProductCard">
+                    <a href="#">
+                        <div class="productPhoto"><img src="/Images/Product/不規則條紋上衣.jpg" alt="不規則條紋上衣"></img></div>
+                        <p>商品名</p>
+                        <p>價格</p>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
         <div class="content">
-             <div class="about">
-                 <div class="titleText">關於Onique</div>
+            <div class="about">
+                <div class="titleText">關於Onique</div>
                 <div>品牌故事</div>
                 <div>店鋪資訊</div>
                 <div>聯絡我們</div>
@@ -191,7 +208,7 @@
                 <div>隱私權保護政策</div>
                 <div>退換貨說明</div>
                 <div>會員電子報</div>
-             </div>
+            </div>
             <div class="about">
                 <div class="titleText">官方社群</div>
                 <div>Facebook</div>
@@ -208,7 +225,8 @@
                         <img src="/Images/Footer/FB_logo.png">
                     </div>
                     <div class="icon">
-                        <img src="/Images/Footer/Line_logo.png">                    </div>
+                        <img src="/Images/Footer/Line_logo.png">
+                    </div>
                     <div class="icon">
                         <img src="/Images/Footer/IG_logo.png">
                     </div>
@@ -220,4 +238,5 @@
         </div>
     </div>
 </body>
+
 </html>
