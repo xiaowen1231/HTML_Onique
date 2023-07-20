@@ -10,7 +10,11 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/Reset.css">
     <link rel="stylesheet" href="../CSS/Common.css">
-
+    <style>
+        .dollar::before{
+            content: '$';
+        }
+    </style>
 </head>
 
 <body>
@@ -155,8 +159,8 @@
             </div>
             <div class="p-2 my-2 d-flex justify-content-between">
                 <div class="d-flex ">
-                    <div class="fw-bold" style="width: 95px;">運送費用: $</div>
-                    <div class="text-end " style="width: 95px;">123</div>
+                    <div class="fw-bold" style="width: 95px;">運送費用: </div>
+                    <div class="text-end " style="width: 95px;"><span class="dollar">123</span></div>
                 </div>
                 <div class="d-flex">
                     <div class="fw-bold text-black-50" style="width: 95px;">付款方式</div>

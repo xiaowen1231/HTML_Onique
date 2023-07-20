@@ -73,3 +73,11 @@
 }.width-300px {
     width: 300px;
 }
+.square-150{
+    width: 150px;
+    height: 150px;
+}
+.square-32{
+    width: 32px;
+    height: 32px;
+}
