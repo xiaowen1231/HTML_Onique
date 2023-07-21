@@ -10,18 +10,30 @@
 
     <title>註冊新會員</title>
     <style>
-        body {
+        .myBackground {
+            height: calc(100vh);
             background-image: url('/Images/Carousel/background.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
         }
+
+        .myContainer {
+            width: 500px;
+            height: 500px;
+            position: fixed;
+            top: 50%;
+            right: 15%;
+            transform: translateY(-50%);
+            border-radius: 15px;
+            /* filter: blur(10px); */
+        }
     </style>
 </head>
 
 <body>
-    <div class="d-flex align-items-center" style="height: 68.6vh;">
-        <div class="container bg-opacity-50 bg-dark rounded">
+    <div class="myBackground d-flex align-items-center">
+        <div class="myContainer container bg-opacity-50 bg-dark rounded">
             <div class="row row-cols-1 text-center mt-4">
                 <div class="col mb-4">
                     <label class="fs-2 text-white fw-bold" for="">註冊新會員 :</label>
@@ -48,6 +60,7 @@
                 </div>
                 <div class="col mb-4 ">
                     <input type="button" value="加入會員" class="btn btn-dark border fw-bold mx-2">
+                    <input type="button" value="取消" class="btn btn-light border fw-bold mx-2">
                 </div>
             </div>
         </div>
