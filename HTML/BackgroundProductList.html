@@ -22,7 +22,7 @@
         </div>
         <div class="p-2">
             <div class="d-flex p-2 align-items-center">
-                <div class="col-2" style="margin-left: 4%;">
+                <div class="col-1" style="margin-left: 2%;">
                     <button class="btn btn-dark">新增商品</button>
                 </div>
                 <div class="col-3 d-flex align-items-center">
@@ -35,7 +35,7 @@
                     <div class="fw-bold mx-2">商品分類:</div>
                     <div>
                         <select class="form-select">
-                            <option>請選擇商品分類</option>
+                            <option>請選擇</option>
                             <option>T恤</option>
                             <option>襯衫</option>
                             <option>毛衣</option>
@@ -48,7 +48,17 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-3 text-end" style="margin-left: 2%">
+                <div class="col-3 d-flex align-items-center border">
+                    <div class="fw-bold mx-2">優惠活動:</div>
+                    <div>
+                        <select class="form-select">
+                            <option>請選擇</option>
+                            <option>夏日特賣</option>
+                            <option>熱銷優惠</option>                            
+                        </select>
+                    </div>
+                </div>
+                <div class="text-end">
                     <button class="btn btn-dark fw-bold">查詢</button>
                     <button class="btn btn-outline-dark fw-bold mx-3">取消查詢</button>
                 </div>
@@ -59,11 +69,12 @@
                 <thead class="table-dark">
                     <tr>
                         <th width="200">商品圖片</th>
-                        <th width="250">商品名稱</th>
-                        <th width="250">商品價格</th>
+                        <th width="200">商品名稱</th>
+                        <th width="200">商品價格</th>
                         <th width="180">商品分類</th>
-                        <th width="150">編輯</th>
-                        <th width="150">刪除</th>
+                        <th width="150">優惠活動</th>
+                        <th width="120">編輯</th>
+                        <th width="120">刪除</th>
                     </tr>
                 </thead>
                 <tr>
@@ -74,10 +85,13 @@
                         不規則條紋上衣
                     </td>
                     <td class="dollar">
-                        800
+                        1180
                     </td>
                     <td>
                         上衣
+                    </td>
+                    <td>
+                        <div></div>
                     </td>
                     <td>
                         <img src="../Images/EmployeePhoto/edit.png" class="square-32" alt="">
@@ -100,6 +114,9 @@
                         外套
                     </td>
                     <td>
+                        熱銷優惠
+                    </td>
+                    <td>
                         <img src="../Images/EmployeePhoto/edit.png" class="square-32" alt="">
                     </td>
                     <td>
@@ -120,6 +137,9 @@
                         襯衫
                     </td>
                     <td>
+                        夏日特賣
+                    </td>
+                    <td>
                         <img src="../Images/EmployeePhoto/edit.png" class="square-32" alt="">
                     </td>
                     <td>
@@ -138,6 +158,9 @@
                     </td>
                     <td>
                         毛衣
+                    </td>
+                    <td>
+                        <div></div>
                     </td>
                     <td>
                         <img src="../Images/EmployeePhoto/edit.png" class="square-32" alt="">
