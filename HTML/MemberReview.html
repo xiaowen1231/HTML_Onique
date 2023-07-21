@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="/CSS/MemberReview.css">
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>商品評價</title>
 </head>
+
 <body>
-    
+
     <div class="container mt-4">
-        <div class="row justify-content-center ">
-            <div class="col-sm-11 col-md-9 marker2">
-                <div class="serviceTitle my-4 ">
-                    <h2>商品評價</h2>
+        <div class="fs-3 fw-bold py-4 border-bottom border-dark-subtle">商品評價</div>
+        <div class="p-2 my-2">
+            <div class="p-2 d-flex">
+                <div class="text-end" style="width: 100px;">商品編號 :</div>
+                <div class="mx-3">2572737</div>
+            </div>
+            <div class="p-2 d-flex">
+                <div class="text-end" style="width: 100px;">商品名稱 :</div>
+                <div class="mx-3">丹寧亨利領襯衫</div>
+            </div>
+            <div class="p-2 d-flex">
+                <div class="text-end" style="width: 100px;">評價分數 :</div>
+                <div class="px-3 marker">
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
+                    <i class="material-icons">grade</i>
                 </div>
-                <div class="row row-cols-1 reviewContent">
-                    <div class="col py-4 ">
-                        <div class="row justify-content-center ">
-                            <div class="col-lg-2 col-sm-7 minipuoductCard">
-                            <a href="ProductDetail.html">
-                                <div><img src="/Images/Product/丹寧亨利領襯衫.jpg" class="d-none d-sm-block" width="100%" >
-                                    <label >丹寧亨利領襯衫</label>
-                                </div>                               
-                            </a>
-                            </div>
-                            <textarea>
-                            <div class="col-lg-6 col-sm-6 commentContext"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                 Obcaecati voluptatum id aut ex eum ipsum odit, enim nesciunt cupiditate numquam vel tempora eveniet commodi
-                                  voluptates consectetur rerum molestias quas sint.</p></div></textarea>
-                            <div class="col-lg-3 d-none d-lg-block d-flex">
-                                <div class="marker">
-                                    <i class="material-icons">grade</i>
-                                    <i class="material-icons">grade</i>
-                                    <i class="material-icons">grade</i>
-                                    <i class="material-icons">grade</i>
-                                    <i class="material-icons">grade</i></div>                                  
-                                </div>
-                        </div>                                                
-                    </div>                         
+            </div>
+            <div class="p-2 d-flex">
+                <div class="text-end" style="width: 100px;">留言評論 :</div>
+                <div class="form-floating mx-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                        style="width: 500px ;height:100px;"></textarea>
+                    <label for="floatingTextarea" style="font-size: 14px;">請輸入您的看法，以方便我們提供更好的服務</label>
                 </div>
-
-
             </div>
         </div>
-        
     </div>
 </body>
+
 </html>
