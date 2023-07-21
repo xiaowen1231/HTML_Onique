@@ -62,8 +62,8 @@ table tbody tr:nth-child(odd){  /*設定奇數列顏色*/
   
 }
 .AddButton:hover{
-    color:black;
-    background-color:white;
+    color:white;
+    background-color:#5B5B5B;
     
   }
 
