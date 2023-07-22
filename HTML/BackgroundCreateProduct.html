@@ -10,56 +10,108 @@
 </head>
 
 <body>
-    <div class="border shadow rounded-4 container justify-content-center my-2 col-6">
-        <div class="container justify-content-center text-center p-2">
-            <div class="align-items-center fs-3 fw-bold border-bottom p-2">新增商品資訊</div>
-        </div>
-        <div class="container d-flex justify-content-center my-2">            
-            <div class="container border d-flex py-3 mx-4 col-8 rounded bg-light">
-                <div class="p-2" style="margin-left:15% ;">
-                    <div class="p-2 d-flex align-items-center">
-                        <div class="text-center fw-bold">商品名稱 :</div>
-                        <div class="mx-3">不規則條紋上衣</div>
+    <div class="d-flex container">
+        <div class="col-2" style="margin-left: 8%;">
+            <div class="text-center my-2">
+                <div class=" border p-3 rounded-4 ">
+                    <div class="p-2 my-1 bg-dark text-white rounded">
+                        商品細部編輯
                     </div>
-                    <div class="p-2 d-flex align-items-center">
-                        <div class="text-center fw-bold">商品價格 :</div>
-                        <div class="mx-2">
-                            <input type="text" class="form-control" value="1180">
-                        </div>
+                    <div class="container">
+                        <input type="button" value="尺寸、顏色設定"
+                            class="btn btn-outline-dark form-control border my-2 fw-bold">
+                        <input type="button" value="新增尺寸" class="btn btn-outline-dark border form-control my-2 fw-bold">
+                        <input type="button" value="新增顏色" class="btn btn-outline-dark border form-control my-2 fw-bold">
+                        <input type="button" value="庫存量設定"
+                            class="btn btn-outline-dark border form-control my-2 fw-bold">
                     </div>
-                    <div class="p-2 d-flex align-items-center">
-                        <div class="text-center fw-bold">商品分類 :</div>
-                        <div class="mx-3">上衣</div>
-                    </div>
-                    <div class="p-2 d-flex align-items-center">
-                        <div class="text-center p-2 fw-bold">供應商 :</div>
-                        <div class="mx-3">以純</div>
-                    </div>
-                    <div class="p-2 d-flex align-items-center">
-                        <div class="text-center fw-bold">上架時間 :</div>
-                        <div class="mx-2">
-                            <input type="date" class="form-control">
-                        </div>
-                    </div>
-                    <div class="p-2 d-flex align-items-center">
-                        <div class="text-center fw-bold">下架時間 :</div>
-                        <div class="mx-2">
-                            <input type="date" class="form-control">
-                        </div>
-                    </div>
-                    <div class="p-2 d-flex">
-                        <div class="text-center fw-bold">商品描述 :</div>
-                        <div class="mx-2">
-                            <textarea class="form-control" style="width: 140%; height: 180px;"></textarea>
-                        </div>
-                    </div>
-                </div> 
+                </div>
             </div>
         </div>
-        <div>
-            <div class="p-4 container text-center">                
-                <input type="button" value="取消編輯" class="btn btn-outline-dark border fw-bold mx-3">
-                <input type="button" value="編輯完成" class="btn btn-dark border fw-bold">
+        <div class="border shadow rounded-4 container justify-content-center my-2 mx-4">
+            <div class="container justify-content-center text-center p-2">
+                <div class="align-items-center fs-3 fw-bold border-bottom p-2">新增商品資訊</div>
+            </div>
+            <div class="container d-flex justify-content-center my-2">
+                <div class="d-flex py-3 mx-4 rounded">
+                    <div class="p-2">
+                        <div class="p-2 d-flex align-items-center">
+                            <div class="text-center fw-bold">商品名稱 :</div>
+                            <div class="mx-2">
+                                <input type="text" class="form-control" value="">
+                            </div>
+                        </div>
+                        <div class="p-2 d-flex align-items-center">
+                            <div class="text-center fw-bold">商品價格 :</div>
+                            <div class="mx-2">
+                                <input type="text" class="form-control" value="">
+                            </div>
+                        </div>
+                        <div class="p-2 d-flex align-items-center">
+                            <div class="text-center fw-bold">商品分類 :</div>
+                            <div class="mx-2">
+                                <select class="form-select">
+                                    <option>請選擇</option>
+                                    <option>T恤</option>
+                                    <option>襯衫</option>
+                                    <option>毛衣</option>
+                                    <option>外套</option>
+                                    <option>背心</option>
+                                    <option>牛仔褲</option>
+                                    <option>休閒褲</option>
+                                    <option>短褲</option>
+                                    <option>飾品</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="p-2 d-flex align-items-center">
+                            <div class="text-center p-2 fw-bold">供應商 :</div>
+                            <div class="mx-2">
+                                <select class="form-select">
+                                    <option>請選擇</option>
+                                    <option>美特斯邦威</option>
+                                    <option>以純</option>
+                                    <option>杰克瓊斯</option>
+                                    <option>恆源祥</option>
+                                    <option>愛慕</option>
+                                    <option>百麗</option>
+                                    <option>特步</option>
+                                    <option>波司登</option>
+                                    <option>金利來</option>
+                                    <option>艾格</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="p-2 d-flex align-items-center">
+                            <div class="text-center fw-bold">上架時間 :</div>
+                            <div class="mx-2">
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="p-2 d-flex align-items-center">
+                            <div class="text-center fw-bold">下架時間 :</div>
+                            <div class="mx-2">
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="p-2 d-flex">
+                            <div class="text-center fw-bold">商品描述 :</div>
+                            <div class="mx-2">
+                                <textarea class="form-control" style="width: 140%; height: 180px;"></textarea>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-5 container" style="margin-left: 15%;">
+                        <img src="../Images/Product/不規則條紋上衣.jpg" class="rounded img-thumbnail">
+                        <input type="file" class="form-control my-2">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="p-4 container text-center">
+                    <input type="button" value="取消編輯" class="btn btn-outline-dark border fw-bold mx-3">
+                    <input type="submit" value="確認新增" class="btn btn-dark border fw-bold">
+                </div>
             </div>
         </div>
     </div>
