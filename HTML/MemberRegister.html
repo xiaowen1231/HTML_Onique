@@ -10,21 +10,27 @@
 
     <title>註冊新會員</title>
     <style>
-        .myBackground {
+        /* .myBackground {
             height: calc(100vh);
             background-image: url('/Images/Carousel/background.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+        } */
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Shippori Mincho", serif;
         }
 
         .myContainer {
-            width: 500px;
-            height: 500px;
-            position: fixed;
-            top: 50%;
-            right: 15%;
-            transform: translateY(-50%);
+            width: 700px;
+            height: 600px;
+            /* position: fixed; */
+            /* top: 50%; */
+            /* right: 15%;
+            transform: translateY(-50%); */
             border-radius: 15px;
             /* filter: blur(10px); */
         }
@@ -32,39 +38,83 @@
 </head>
 
 <body>
-    <div class="myBackground d-flex align-items-center">
-        <div class="myContainer container bg-opacity-50 bg-dark rounded">
+    <div class="myBackground">
+        <div class="myContainer container border border-radius bg-opacity-50 bg-dark my-5">
             <div class="row row-cols-1 text-center mt-4">
                 <div class="col mb-4">
-                    <label class="fs-2 text-white fw-bold" for="">註冊新會員 :</label>
+                    <div class="fs-2 fw-bold text-white">註冊新會員</div>
                 </div>
-                <div class="col mb-4">
-                    <label class="text-white fw-bold" for="newAccount">會員帳號 :</label>
-                    <input type="text" placeholder="請輸入帳號" id="newAccount">
+                <div class="container col-9 p-2 my-2">
+                    <div class="p-2 d-flex align-items-center justify-content-center">
+                        <div class="text-end fw-bold text-white" style="width: 100px;">會員姓名 :</div>
+                        <div class="mx-3">
+                            <input type="text" class="form-control" placeholder="請輸入姓名">
+                        </div>
+                    </div>
+                    <div class="p-2 d-flex align-items-center justify-content-center">
+                        <div class="text-end fw-bold text-white" style="width: 100px;">電子信箱 :</div>
+                        <div class="mx-3">
+                            <input type="text" class="form-control" placeholder="請輸入電子信箱">
+                        </div>
+                    </div>
+                    <div class="p-2 d-flex align-items-center justify-content-center">
+                        <div class="text-end fw-bold text-white" style="width: 100px;">手機號碼 :</div>
+                        <div class="mx-3">
+                            <input type="text" class="form-control" placeholder="請輸入手機號碼">
+                        </div>
+                    </div>
+                    <div class="p-2 d-flex align-items-center justify-content-center">
+                        <div class="text-end fw-bold text-white" style="width: 100px;">會員密碼 :</div>
+                        <div class="mx-3">
+                            <input type="text" class="form-control" placeholder="請輸入密碼">
+                        </div>
+                    </div>
+                    <div class="p-2 d-flex align-items-center justify-content-center">
+                        <div class="text-end fw-bold text-white" style="width: 100px;">確認密碼 :</div>
+                        <div class="mx-3">
+                            <input type="text" class="form-control" placeholder="確認密碼">
+                        </div>
+                    </div>
+                    <div class="p-2 d-flex align-items-center justify-content-center">
+                        <div class="text-end fw-bold text-white" style="width: 100px;">性別 :</div>
+                        <div class="mx-3">
+                            <select class="form-select w-100">
+                                <option selected>-請選擇性別-</option>
+                                <option value="False">男</option>
+                                <option value="Ture">女</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="p-2 d-flex align-items-center justify-content-center">
+                        <div class="text-end fw-bold text-white" style="width: 100px;">地址</div>
+                        <div class="mx-3">
+                            <select class="form-select w-100">
+                                <option selected>-請選擇縣市-</option>
+                                <option value="1">台北市</option>
+                                <option value="2">新北市</option>
+                                <option value="3">桃園市</option>
+                            </select>
+                        </div>
+                        <div class="mx-3">
+                            <select class="form-select w-100">
+                                <option selected>-請選擇地區-</option>
+                                <option value="1">大安區</option>
+                                <option value="2">中山區</option>
+                                <option value="3">中正區</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="p-2 d-flex align-items-center justify-content-center">
+                        <input type="button" value="加入會員" class="btn btn-dark border fw-bold mx-2">
+                        <input type="button" value="取消" class="btn btn-light border fw-bold mx-2">
+                    </div>
                 </div>
-                <div class="col mb-4">
-                    <label class="text-white fw-bold">電子信箱 :</label>
-                    <input type="text">
-                </div>
-                <div class="col mb-4">
-                    <label class="text-white fw-bold">手機號碼 :</label>
-                    <input type="tel">
-                </div>
-                <div class="col mb-4">
-                    <label class="text-white fw-bold" for="newPwd">會員密碼 :</label>
-                    <input type="password" id="newPwd" placeholder="請輸入密碼">
-                </div>
-                <div class="col mb-4">
-                    <label class="text-white fw-bold">確認密碼 :</label>
-                    <input type="password" placeholder="請再次輸入密碼">
-                </div>
-                <div class="col mb-4 ">
-                    <input type="button" value="加入會員" class="btn btn-dark border fw-bold mx-2">
-                    <input type="button" value="取消" class="btn btn-light border fw-bold mx-2">
-                </div>
+
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>
